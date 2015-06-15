@@ -1,13 +1,14 @@
 # isorender
 isomorphic rendering api
 
-proof of concept of small api containing a unique endpoint /render 
-start node api
+proof of concept of small api containing a unique endpoint `/render`  
+
+### Start node api
 ```
 node index.js
 ```
 api will listen on port 3000  
-start go app
+### start go app
 ```
 go run main.go
 ```
