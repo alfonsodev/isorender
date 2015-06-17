@@ -2,8 +2,10 @@
 // make `.jsx` file requirable by node
 require('node-jsx').install();
 var express = require('express');
+var bodyParser = require('body-parser')
 var renderer = require('react-engine');
 var app = express();
+app.use(bodyParser.json())
 
 // create the view engine with `react-engine`
 var engine = renderer.server.create();
@@ -21,10 +23,8 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.post('/render', function(req, res) {
-  res.render('index', {
-    title: 'React Engine Express Sample App',
-    name: 'Michael'
-  });
+  var variables = req.body;
+  res.render('index', variables);
 })
 
 
