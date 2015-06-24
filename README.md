@@ -3,6 +3,11 @@ isomorphic rendering api
 
 proof of concept of small api containing a unique endpoint `/render`  
 
+## Run it with Docker  
+```
+docker run -d --name isorender -v $(pwd)/public:/isorender/public -p 3000:3000 alfonso/isorender  
+```
+
 ### Start node api
 ```
 node index.js

@@ -2,4 +2,5 @@ isorender
 
   [√] responde to a post request with html
   [√] Can render react
-  [] Can send variables to javascript
+  [√] Can send variables to javascript
+  [√] Runs in a Docker container 
